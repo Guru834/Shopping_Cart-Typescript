@@ -5,4 +5,5 @@ export interface ITypes {
   image: string;
   price: number;
   title: string;
+  amount: number;
 }
