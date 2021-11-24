@@ -1,5 +1,5 @@
 import { Button, Typography } from "@mui/material";
-import { Box, fontSize } from "@mui/system";
+import { Box } from "@mui/system";
 import React from "react";
 import { ITypes } from "../../interface/types";
 
@@ -13,26 +13,36 @@ const Cart: React.FC<ICart> = ({ cartItems, addItem, removeItem }) => {
   const calculateCost = (items: ITypes[]) =>
     items.reduce((ack: number, item) => ack + item.amount * item.price, 0);
   return (
-    <Box sx={{ margin: "7%" }}>
+    <Box sx={{ margin: "7%", zIndex: 1000 }}>
       {cartItems.map((item) => {
         return (
           <CartItem
+            key={item.id}
             cartItems={item}
             addItem={addItem}
             removeItem={removeItem}
           />
         );
       })}
-      <Typography
-        sx={{ fontSize: "15px", fontWeight: "bold", marginTop: "3%" }}
-      >
-        Total:- {calculateCost(cartItems).toFixed(2)}
-      </Typography>
-      <Box>
-        <Button variant="contained" sx={{ width: "100%", marginTop: "15%" }}>
-          Buy
-        </Button>
-      </Box>
+      {cartItems.length <= 0 ? (
+        "No item in the cart"
+      ) : (
+        <>
+          <Typography
+            sx={{ fontSize: "15px", fontWeight: "bold", marginTop: "3%" }}
+          >
+            Total:- {calculateCost(cartItems).toFixed(2)}
+          </Typography>
+          <Box>
+            <Button
+              variant="contained"
+              sx={{ width: "100%", marginTop: "15%" }}
+            >
+              Buy
+            </Button>
+          </Box>
+        </>
+      )}
     </Box>
   );
 };
