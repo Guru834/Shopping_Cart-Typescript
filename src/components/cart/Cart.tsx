@@ -8,10 +8,17 @@ interface ICart {
   cartItems: ITypes[];
   addItem(types: number): void;
   removeItem(types: number): void;
+  handleBuy(): void;
 }
-const Cart: React.FC<ICart> = ({ cartItems, addItem, removeItem }) => {
+const Cart: React.FC<ICart> = ({
+  cartItems,
+  addItem,
+  removeItem,
+  handleBuy,
+}) => {
   const calculateCost = (items: ITypes[]) =>
     items.reduce((ack: number, item) => ack + item.amount * item.price, 0);
+
   return (
     <Box sx={{ margin: "7%", zIndex: 1000 }}>
       {cartItems.map((item) => {
@@ -37,6 +44,7 @@ const Cart: React.FC<ICart> = ({ cartItems, addItem, removeItem }) => {
             <Button
               variant="contained"
               sx={{ width: "100%", marginTop: "15%" }}
+              onClick={handleBuy}
             >
               Buy
             </Button>

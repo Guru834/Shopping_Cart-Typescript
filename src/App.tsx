@@ -39,6 +39,11 @@ const App = () => {
     setAlertBackDrop(false);
     setOpen(true);
   };
+  const handleBuy = (): void => {
+    alert("Thank you for buying with us");
+    setCart([]);
+    setOpen(false);
+  };
   const handleAddToCart = (cartItem: ITypes) => {
     if (cart.length >= 1) {
       alert("New addition in your cart:-  " + cartItem.title);
@@ -155,6 +160,7 @@ const App = () => {
                 cartItems={cart}
                 addItem={addToCart}
                 removeItem={removeFromCart}
+                handleBuy={handleBuy}
               />
             </Box>
           </Drawer>
