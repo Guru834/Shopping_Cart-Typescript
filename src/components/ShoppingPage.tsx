@@ -1,14 +1,9 @@
-import { ExpandMore } from "@mui/icons-material";
 import {
-  Avatar,
   Button,
   Card,
-  CardActions,
   CardContent,
   CardHeader,
   CardMedia,
-  Collapse,
-  IconButton,
   Typography,
 } from "@mui/material";
 import { Box } from "@mui/system";

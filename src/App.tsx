@@ -7,7 +7,6 @@ import {
   AppBar,
   Backdrop,
   Badge,
-  CircularProgress,
   Drawer,
   IconButton,
   Skeleton,
@@ -18,7 +17,6 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import Cart from "./components/cart/Cart";
 import CartAlert from "./components/cart/CartAlert";
-import { blue } from "@mui/material/colors";
 const App = () => {
   const [data, setData] = useState<ITypes[]>([]);
   const [cart, setCart] = useState<ITypes[]>([]);
