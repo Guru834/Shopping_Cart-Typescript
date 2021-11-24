@@ -1,5 +1,5 @@
 # Shopping_Cart-TypeScript 
-This programme was intended to assist customers in purchasing their favourite items through a user-friendly website. This programme makes use of a fake store API.
+This program was intended to assist customers in purchasing their favorite items through a user-friendly website. This program makes use of a fake store API.
 <br />
 # Contributors
 <a href = 'https://github.com/Guru834/'>Guru834</a>
