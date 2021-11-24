@@ -1,3 +1,35 @@
+# Shopping_Cart-TypeScript 
+This programme was intended to assist customers in purchasing their favourite items through a user-friendly website. This programme makes use of a fake store API.
+<br />
+# Contributors
+<a href = 'https://github.com/Guru834/'>Guru834</a>
+
+# Built With:
+<ul>
+  <li><a href = 'https://www.typescriptlang.org/docs/handbook/react.html'>React Typescript</a> - TypeScript checks a program for errors before execution, and does so based on the kinds of values, it’s a static type checker.</li>
+  <li><a href = 'https://mui.com/'>MUI</a> - MUI provides a robust, customizable, and accessible library of foundational and advanced components, enabling you to build your own design system and develop React applications faster.</li>
+  <li><a href = 'https://www.npmjs.com/package/axios'>Axios</a> - Axios is a lightweight HTTP client based on the XMLHttpRequests service. It is used to perform HTTP requests and usually utilized in the front-end part of the application.</li>
+  <li><a href = https://fakestoreapi.com/'>Fake Store API</a> - Fake store rest API for your e-commerce or shopping website prototype</li>
+</ul>
+
+# Features:
+<ul>
+  <li>Any item from the shop can be added to the cart by the user.</li>
+  <li>The quantity of an item can be increased or decreased in the cart.</li>
+  <li>When a customer adds an item to their basket, they will be alerted.</li>
+  <br />
+
+https://user-images.githubusercontent.com/58672398/143309280-bd6456f3-6b95-4c2b-bae9-6c73d88b1692.mov
+
+
+</ul>
+
+
+
+<br />
+
+<br />
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -44,3 +76,29 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
